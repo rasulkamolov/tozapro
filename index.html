@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TozaPro — Premium Tozalash Xizmati</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+
+    <!-- FontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- AOS Animation Library -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <!-- Swiper Slider -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Loader -->
+    <div class="loader-wrapper">
+        <div class="loader">
+            <div class="loader-circle"></div>
+            <img src="logo.png" alt="TozaPro Logo" class="loader-logo">
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <header id="header">
+        <div class="container nav-container">
+            <a href="#" class="logo">
+                <img src="logo.png" alt="TozaPro Logo">
+                <span>TozaPro</span>
+            </a>
+
+            <nav class="nav-links">
+                <a href="#home" class="active">Bosh sahifa</a>
+                <a href="#services">Xizmatlar</a>
+                <a href="#why-us">Afzalliklar</a>
+                <a href="#process">Jarayon</a>
+                <a href="#reviews">Mijozlar</a>
+                <a href="#contact" class="btn-nav">Bog'lanish</a>
+            </nav>
+
+            <div class="mobile-menu-btn">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-bg-overlay"></div>
+        <div class="container hero-content" data-aos="fade-up">
+            <h1 class="hero-title">
+                Tozalikka <span class="highlight">Yechim</span> — <br>TozaPro
+            </h1>
+            <p class="hero-subtitle">
+                Uy va ofislarni professional tozalash.<br>
+                Tezkor xizmat • Sifat kafolati • Premium yondashuv
+            </p>
+            <div class="hero-btns">
+                <a href="#contact" class="btn btn-primary">Xizmat buyurtma qilish</a>
+                <a href="#services" class="btn btn-outline">Batafsil ma'lumot</a>
+            </div>
+
+            <div class="hero-stats">
+                <div class="stat-item">
+                    <span class="stat-number">500+</span>
+                    <span class="stat-label">Mamnun mijozlar</span>
+                </div>
+                <div class="stat-divider"></div>
+                <div class="stat-item">
+                    <span class="stat-number">100%</span>
+                    <span class="stat-label">Sifat kafolati</span>
+                </div>
+                <div class="stat-divider"></div>
+                <div class="stat-item">
+                    <span class="stat-number">24/7</span>
+                    <span class="stat-label">Qo'llab-quvvatlash</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="scroll-down">
+            <div class="mouse">
+                <div class="wheel"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="section services">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <h2 class="section-title">Bizning Xizmatlar</h2>
+                <p class="section-desc">Har bir burchakda mukammal tozalik</p>
+            </div>
+
+            <div class="services-grid">
+                <!-- Service 1 -->
+                <div class="service-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="service-icon">
+                        <i class="fa-solid fa-house-chimney"></i>
+                    </div>
+                    <h3>Uy Tozalash</h3>
+                    <p>Xonadonlar, kottejlar va hovli uylar uchun mukammal tozalash xizmati.</p>
+                    <a href="#contact" class="service-link">Buyurtma berish <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+
+                <!-- Service 2 -->
+                <div class="service-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="service-icon">
+                        <i class="fa-solid fa-building"></i>
+                    </div>
+                    <h3>Ofis Tozalash</h3>
+                    <p>Ish joyingizda unumdorlik va tozalikni ta'minlaymiz.</p>
+                    <a href="#contact" class="service-link">Buyurtma berish <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+
+                <!-- Service 3 -->
+                <div class="service-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="service-icon">
+                        <i class="fa-solid fa-couch"></i>
+                    </div>
+                    <h3>Yumshoq Mebel</h3>
+                    <p>Divan va kreslolarni maxsus uskunalar yordamida chuqur tozalash.</p>
+                    <a href="#contact" class="service-link">Buyurtma berish <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+
+                <!-- Service 4 -->
+                <div class="service-card" data-aos="fade-up" data-aos-delay="400">
+                    <div class="service-icon">
+                        <i class="fa-solid fa-rug"></i>
+                    </div>
+                    <h3>Gilam Yuvish</h3>
+                    <p>Gilamlarni olib ketish va yetkazib berish bilan sifatli yuvish.</p>
+                    <a href="#contact" class="service-link">Buyurtma berish <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+
+                <!-- Service 5 -->
+                <div class="service-card" data-aos="fade-up" data-aos-delay="500">
+                    <div class="service-icon">
+                        <i class="fa-solid fa-spray-can-sparkles"></i>
+                    </div>
+                    <h3>Dezinfeksiya</h3>
+                    <p>Virus va bakteriyalarga qarshi professional dezinfeksiya.</p>
+                    <a href="#contact" class="service-link">Buyurtma berish <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+
+                <!-- Service 6 -->
+                <div class="service-card" data-aos="fade-up" data-aos-delay="600">
+                    <div class="service-icon">
+                        <i class="fa-solid fa-window-maximize"></i>
+                    </div>
+                    <h3>Deraza Yuvish</h3>
+                    <p>Har qanday balandlikdagi derazalarni izsiz tozalash.</p>
+                    <a href="#contact" class="service-link">Buyurtma berish <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Us Section -->
+    <section id="why-us" class="section why-us">
+        <div class="container">
+            <div class="why-us-content">
+                <div class="why-us-text" data-aos="fade-right">
+                    <h2 class="section-title">Nega Aynan <span class="highlight">TozaPro?</span></h2>
+                    <p class="why-us-desc">Biz shunchaki tozalamaymiz, biz sizga vaqt va xotirjamlik hadya etamiz.</p>
+
+                    <ul class="features-list">
+                        <li>
+                            <div class="feature-icon"><i class="fa-solid fa-check"></i></div>
+                            <div>
+                                <h4>Professional Jamoa</h4>
+                                <p>Tajribali va maxsus o'qitilgan xodimlar.</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="feature-icon"><i class="fa-solid fa-check"></i></div>
+                            <div>
+                                <h4>Eko Vositalar</h4>
+                                <p>Salomatlik uchun xavfsiz tozalash vositalari.</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="feature-icon"><i class="fa-solid fa-check"></i></div>
+                            <div>
+                                <h4>Qulay Vaqt</h4>
+                                <p>Sizga qulay vaqtda xizmat ko'rsatamiz.</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="why-us-image" data-aos="fade-left">
+                    <!-- Abstract geometric pattern or generic image placeholder -->
+                    <div class="image-wrapper">
+                        <img src="https://images.unsplash.com/photo-1581578731117-104f2a41272c?ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80"
+                             onerror="this.src='https://placehold.co/600x400/EEE/31343C?text=Professional+Cleaning'"
+                             alt="Professional Cleaning" class="feature-img">
+                        <div class="experience-badge">
+                            <span class="years">5+</span>
+                            <span class="text">Yillik<br>Tajriba</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Process Section -->
+    <section id="process" class="section process">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <h2 class="section-title">Ishlash Jarayoni</h2>
+                <p class="section-desc">Tozalikka erishish uchun 3 oddiy qadam</p>
+            </div>
+
+            <div class="steps-container">
+                <div class="step-item" data-aos="fade-up" data-aos-delay="100">
+                    <div class="step-number">01</div>
+                    <h3>Buyurtma Bering</h3>
+                    <p>Telefon yoki sayt orqali bog'laning va vaqtni belgilang.</p>
+                </div>
+                <div class="step-line"></div>
+                <div class="step-item" data-aos="fade-up" data-aos-delay="200">
+                    <div class="step-number">02</div>
+                    <h3>Tozalash</h3>
+                    <p>Jamoamiz kelib, barcha ishlarni professional tarzda bajaradi.</p>
+                </div>
+                <div class="step-line"></div>
+                <div class="step-item" data-aos="fade-up" data-aos-delay="300">
+                    <div class="step-number">03</div>
+                    <h3>Natijadan Zavqlaning</h3>
+                    <p>Toza va ozoda uydan bahra oling. To'lovni amalga oshiring.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="reviews" class="section reviews">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <h2 class="section-title">Mijozlarimiz Fikrlari</h2>
+                <p class="section-desc">Bizning xizmatimizdan mamnun mijozlar</p>
+            </div>
+
+            <div class="swiper testimonials-slider" data-aos="fade-up">
+                <div class="swiper-wrapper">
+                    <!-- Slide 1 -->
+                    <div class="swiper-slide">
+                        <div class="testimonial-card">
+                            <div class="quote-icon"><i class="fa-solid fa-quote-left"></i></div>
+                            <p class="review-text">"TozaPro jamoasi ofisimizni a'lo darajada tozalab berishdi. Har bir burchak e'tibordan chetda qolmadi. Rahmat!"</p>
+                            <div class="reviewer">
+                                <div class="reviewer-info">
+                                    <h4>Azizbek Rahimov</h4>
+                                    <span>Tadbirkor</span>
+                                </div>
+                                <div class="stars">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Slide 2 -->
+                    <div class="swiper-slide">
+                        <div class="testimonial-card">
+                            <div class="quote-icon"><i class="fa-solid fa-quote-left"></i></div>
+                            <p class="review-text">"Uy tozalashga vaqtim yo'q edi, TozaPro'ga murojaat qildim va afsuslanmadim. Juda tez va sifatli."</p>
+                            <div class="reviewer">
+                                <div class="reviewer-info">
+                                    <h4>Malika Karimova</h4>
+                                    <span>Uy bekasi</span>
+                                </div>
+                                <div class="stars">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Slide 3 -->
+                    <div class="swiper-slide">
+                        <div class="testimonial-card">
+                            <div class="quote-icon"><i class="fa-solid fa-quote-left"></i></div>
+                            <p class="review-text">"Gilamlarim yangidek bo'lib qoldi. Narxlari ham hamyonbop. Hammaga tavsiya qilaman!"</p>
+                            <div class="reviewer">
+                                <div class="reviewer-info">
+                                    <h4>Jamshid Tursunov</h4>
+                                    <span>O'qituvchi</span>
+                                </div>
+                                <div class="stars">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star-half-stroke"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Pagination -->
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section id="faq" class="section faq">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <h2 class="section-title">Ko'p Beriladigan Savollar</h2>
+            </div>
+
+            <div class="faq-grid">
+                <div class="faq-item" data-aos="fade-up">
+                    <details>
+                        <summary>Xizmat narxlari qanday belgilanadi?</summary>
+                        <p>Narxlar obyektning hajmi va ifloslanish darajasiga qarab belgilanadi. Aniq narxni bilish uchun menejerimiz bilan bog'laning.</p>
+                    </details>
+                </div>
+                <div class="faq-item" data-aos="fade-up">
+                    <details>
+                        <summary>Qaysi hududlarda xizmat ko'rsatasiz?</summary>
+                        <p>Biz Toshkent shahri va viloyati bo'ylab xizmat ko'rsatamiz.</p>
+                    </details>
+                </div>
+                <div class="faq-item" data-aos="fade-up">
+                    <details>
+                        <summary>Tozalash vositalari zararsizmi?</summary>
+                        <p>Ha, biz faqat sertifikatlangan va ekologik toza vositalardan foydalanamiz.</p>
+                    </details>
+                </div>
+                <div class="faq-item" data-aos="fade-up">
+                    <details>
+                        <summary>Buyurtmani qancha vaqt oldin berish kerak?</summary>
+                        <p>Imkon qadar 1-2 kun oldin buyurtma berishni tavsiya qilamiz, lekin shoshilinch buyurtmalarni ham qabul qilamiz.</p>
+                    </details>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section contact">
+        <div class="container">
+            <div class="contact-wrapper" data-aos="zoom-in">
+                <div class="contact-info">
+                    <h2 class="contact-title">Biz Bilan Bog'laning</h2>
+                    <p>Savollaringiz bormi? Hoziroq qo'ng'iroq qiling!</p>
+
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <i class="fa-solid fa-phone"></i>
+                            <div>
+                                <span>Telefon:</span>
+                                <a href="tel:+998502252220">(998)-50-225-22-20</a>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fa-solid fa-envelope"></i>
+                            <div>
+                                <span>Email:</span>
+                                <a href="mailto:info@tozapro.uz">info@tozapro.uz</a>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fa-solid fa-location-dot"></i>
+                            <div>
+                                <span>Manzil:</span>
+                                <p>Toshkent sh., Chilonzor tumani</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="social-links">
+                        <a href="#"><i class="fa-brands fa-telegram"></i></a>
+                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                    </div>
+                </div>
+
+                <form class="contact-form">
+                    <h3>Xabar Qoldirish</h3>
+                    <div class="form-group">
+                        <input type="text" placeholder="Ismingiz" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="tel" placeholder="Telefon raqamingiz" required>
+                    </div>
+                    <div class="form-group">
+                        <textarea placeholder="Xabaringiz" rows="4"></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary full-width">Yuborish</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container footer-content">
+            <div class="footer-logo">
+                <img src="logo.png" alt="TozaPro">
+                <p>&copy; 2024 TozaPro. Barcha huquqlar himoyalangan.</p>
+            </div>
+            <div class="footer-links">
+                <a href="#services">Xizmatlar</a>
+                <a href="#process">Jarayon</a>
+                <a href="#contact">Bog'lanish</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Floating Call Button (Mobile) -->
+    <a href="tel:+998502252220" class="floating-call-btn">
+        <i class="fa-solid fa-phone"></i>
+    </a>
+
+    <!-- Scripts -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
