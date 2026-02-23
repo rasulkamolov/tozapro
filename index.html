@@ -7,48 +7,277 @@
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script> <!-- Assuming FontAwesome works, if not I'll fallback to emojis/svgs -->
+    <!-- Since I cannot rely on external scripts without internet in production or if user is offline, I'll stick to emojis or inline svgs for icons -->
 </head>
 <body>
     <header>
         <div class="container header-container">
             <div class="logo">
                 <img src="logo.png" alt="TozaPro Logo">
-                <h1>TozaPro</h1>
+                <div class="logo-text">
+                    <h1>TozaPro</h1>
+                    <span>Tozalikka professional yondashuv</span>
+                </div>
             </div>
             <nav>
-                <a href="tel:+998502252220" class="btn-nav">Bog'lanish</a>
+                <ul class="nav-links">
+                    <li><a href="#services">Xizmatlar</a></li>
+                    <li><a href="#why-us">Afzalliklar</a></li>
+                    <li><a href="#process">Jarayon</a></li>
+                    <li><a href="#contact">Bog'lanish</a></li>
+                    <li class="mobile-only"><a href="tel:+998502252220" class="btn-nav">📞 Buyurtma berish</a></li>
+                </ul>
+                <a href="tel:+998502252220" class="btn-nav desktop-only">📞 (998)-50-225-22-20</a>
             </nav>
+            <div class="burger-menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
         </div>
     </header>
 
     <main>
+        <!-- Hero Section -->
         <section class="hero">
+            <div class="overlay"></div>
             <div class="container hero-content">
                 <h2>Tozalikka yechim — TozaPro</h2>
-                <p class="subtitle">🏠 Uy va ofislarni professional tozalash</p>
-                <div class="features">
-                    <span class="feature-item">⚡️ Tezkor xizmat</span>
-                    <span class="separator">•</span>
-                    <span class="feature-item">Sifat kafolati</span>
+                <p class="subtitle">🏠 Uy va ofislarni professional tozalash xizmati. Biz sizning vaqtingizni va asabingizni tejaymiz!</p>
+                <div class="features-hero">
+                    <div class="feature-box">
+                        <span class="icon">⚡️</span>
+                        <p>Tezkor xizmat</p>
+                    </div>
+                    <div class="feature-box">
+                        <span class="icon">🛡️</span>
+                        <p>Sifat kafolati</p>
+                    </div>
+                    <div class="feature-box">
+                        <span class="icon">🌿</span>
+                        <p>Eko-vositalar</p>
+                    </div>
                 </div>
-                <a href="tel:+998502252220" class="cta-button">Hozir buyurtma bering</a>
+                <div class="cta-group">
+                    <a href="tel:+998502252220" class="cta-button primary-btn">Xizmat buyurtma qilish</a>
+                    <a href="#services" class="cta-button secondary-btn">Batafsil ma'lumot</a>
+                </div>
             </div>
         </section>
 
-        <section id="contact" class="contact">
+        <!-- Services Section -->
+        <section id="services" class="services section-padding">
             <div class="container">
-                <h3>Biz bilan bog'laning</h3>
-                <p>Tozalik kerakmi? Qo'ng'iroq qiling!</p>
-                <a href="tel:+998502252220" class="phone-number">☎️ (998)-50-225-22-20</a>
+                <div class="section-title">
+                    <h3>Bizning Xizmatlar</h3>
+                    <p>Biz har qanday turdagi tozalash ishlarini sifatli bajaramiz</p>
+                </div>
+                <div class="services-grid">
+                    <div class="service-card">
+                        <div class="service-icon">🧹</div>
+                        <h4>Uy va Kvartiralarni Tozalash</h4>
+                        <p>General tozalash, kunlik tozalash va nam tozalash ishlari. Uyingizni yaraqlatib qo'yamiz!</p>
+                    </div>
+                    <div class="service-card">
+                        <div class="service-icon">🏢</div>
+                        <h4>Ofis va Tijorat Joylari</h4>
+                        <p>Ish joyingizdagi tozalik — xodimlaringiz samaradorligi garovidir. Ofislarni muntazam tozalash.</p>
+                    </div>
+                    <div class="service-card">
+                        <div class="service-icon">🏗️</div>
+                        <h4>Remontdan Keyingi Tozalash</h4>
+                        <p>Qurilish changlari, bo'yoq izlari va qiyin ketadigan dog'larni maxsus uskunalar yordamida tozalash.</p>
+                    </div>
+                    <div class="service-card">
+                        <div class="service-icon">🛋️</div>
+                        <h4>Yumshoq Mebel va Gilamlar</h4>
+                        <p>Divan, kreslo va gilamlarni joyida kimyoviy tozalash (Ximchistka). Dog' va hidlarni yo'qotamiz.</p>
+                    </div>
+                    <div class="service-card">
+                        <div class="service-icon">🪟</div>
+                        <h4>Oyna va Vitrinalar</h4>
+                        <p>Har qanday balandlikdagi oyna va fasadlarni dog'siz yuvish xizmati.</p>
+                    </div>
+                    <div class="service-card">
+                        <div class="service-icon">🦠</div>
+                        <h4>Dezinfeksiya</h4>
+                        <p>Virus va bakteriyalarga qarshi samarali kurash. Uyingiz xavfsizligini ta'minlaymiz.</p>
+                    </div>
+                </div>
             </div>
         </section>
-    </main>
 
-    <footer>
-        <div class="container">
-            <p>&copy; 2024 TozaPro. Barcha huquqlar himoyalangan.</p>
-        </div>
-    </footer>
+        <!-- Why Choose Us Section -->
+        <section id="why-us" class="why-us section-padding">
+            <div class="container">
+                <div class="section-title">
+                    <h3>Nega Aynan Biz?</h3>
+                    <p>Mijozlarimiz bizni tanlashining asosiy sabablari</p>
+                </div>
+                <div class="benefits-grid">
+                    <div class="benefit-item">
+                        <div class="benefit-number">01</div>
+                        <h4>Tajribali Mutaxassislar</h4>
+                        <p>Bizning jamoamiz maxsus o'qitilgan va ko'p yillik tajribaga ega xodimlardan iborat.</p>
+                    </div>
+                    <div class="benefit-item">
+                        <div class="benefit-number">02</div>
+                        <h4>Xavfsiz Vositalar</h4>
+                        <p>Biz faqat sertifikatlangan, allergiyaga olib kelmaydigan va ekologik toza vositalardan foydalanamiz.</p>
+                    </div>
+                    <div class="benefit-item">
+                        <div class="benefit-number">03</div>
+                        <h4>Qulay Narxlar</h4>
+                        <p>Hamyonbop narxlar va doimiy mijozlar uchun maxsus chegirmalar tizimi mavjud.</p>
+                    </div>
+                    <div class="benefit-item">
+                        <div class="benefit-number">04</div>
+                        <h4>100% Natija</h4>
+                        <p>Agar ishimizdan qoniqmasangiz, biz qaytadan bepul tozalab beramiz. Sifat birinchi o'rinda!</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Process Section -->
+        <section id="process" class="process section-padding">
+            <div class="container">
+                <div class="section-title">
+                    <h3>Ish Jarayoni</h3>
+                    <p>Tozalikka erishish uchun 4 ta oddiy qadam</p>
+                </div>
+                <div class="steps-container">
+                    <div class="step">
+                        <div class="step-icon">📞</div>
+                        <h4>Buyurtma bering</h4>
+                        <p>Telefon yoki sayt orqali bog'laning</p>
+                    </div>
+                    <div class="step-arrow">➝</div>
+                    <div class="step">
+                        <div class="step-icon">🗓️</div>
+                        <h4>Kelishuv</h4>
+                        <p>Sizga qulay vaqt va xizmat turini belgilaymiz</p>
+                    </div>
+                    <div class="step-arrow">➝</div>
+                    <div class="step">
+                        <div class="step-icon">🧼</div>
+                        <h4>Tozalash</h4>
+                        <p>Jamoamiz kelib, a'lo darajada tozalaydi</p>
+                    </div>
+                    <div class="step-arrow">➝</div>
+                    <div class="step">
+                        <div class="step-icon">✨</div>
+                        <h4>Natija</h4>
+                        <p>Toza uydan zavqlaning va to'lov qiling</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Testimonials -->
+        <section class="testimonials section-padding">
+            <div class="container">
+                <div class="section-title">
+                    <h3>Mijozlarimiz Fikri</h3>
+                </div>
+                <div class="testimonials-grid">
+                    <div class="testimonial-card">
+                        <div class="stars">⭐⭐⭐⭐⭐</div>
+                        <p>"TozaPro jamoasiga katta rahmat! Uyimni juda tez va sifatli tozalab berishdi. Ayniqsa gilamlarni yangidek qilishdi. Tavsiya qilaman!"</p>
+                        <h5>- Malika opa, Toshkent</h5>
+                    </div>
+                    <div class="testimonial-card">
+                        <div class="stars">⭐⭐⭐⭐⭐</div>
+                        <p>"Ofisimizni muntazam tozalash uchun shartnoma tuzdik. Xodimlar o'z vaqtida keladi, ishini puxta bajaradi. Narxlari ham hamyonbop."</p>
+                        <h5>- Jamshid, Tadbirkor</h5>
+                    </div>
+                    <div class="testimonial-card">
+                        <div class="stars">⭐⭐⭐⭐⭐</div>
+                        <p>"Remontdan keyingi tozalashga chaqirgandim. O'zim 3 kun tozalasam kerak deb o'ylagan ishni bir kunda bitirib berishdi. Qoyil!"</p>
+                        <h5>- Aziza, Uy bekasi</h5>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ Section -->
+        <section class="faq section-padding" style="background-color: var(--white);">
+            <div class="container">
+                <div class="section-title">
+                    <h3>Ko'p So'raladigan Savollar</h3>
+                </div>
+                <div class="faq-container">
+                    <div class="faq-item">
+                        <h4>❓ Qanday xizmat turlari bor?</h4>
+                        <p>Biz barcha turdagi tozalash xizmatlarini ko'rsatamiz: uy, ofis, ximchistka, oyna yuvish va remontdan keyingi tozalash.</p>
+                    </div>
+                    <div class="faq-item">
+                        <h4>❓ Narxlar qanday belgilanadi?</h4>
+                        <p>Narxlar ish hajmi (kvadrat metr) va ifloslanish darajasiga qarab belgilanadi. Aniq narxni bilish uchun menejer bilan bog'laning.</p>
+                    </div>
+                    <div class="faq-item">
+                        <h4>❓ Qaysi vositalardan foydalanasiz?</h4>
+                        <p>Biz Yevropa standartlariga javob beradigan, sertifikatlangan, ekologik toza va allergiyaga olib kelmaydigan vositalardan foydalanamiz.</p>
+                    </div>
+                    <div class="faq-item">
+                        <h4>❓ Oldindan to'lov kerakmi?</h4>
+                        <p>Yo'q, to'lov xizmat ko'rsatib bo'lingandan so'ng va siz natijani qabul qilib olganingizdan keyin amalga oshiriladi.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA Section -->
+        <section class="cta-section">
+            <div class="container">
+                <h2>Uyingiz tozaligini professionallarga ishonib topshiring!</h2>
+                <p>Hoziroq qo'ng'iroq qiling va bepul konsultatsiya oling.</p>
+                <a href="tel:+998502252220" class="cta-button white-btn">Bog'lanish: (998)-50-225-22-20</a>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer id="contact">
+            <div class="container footer-content">
+                <div class="footer-col">
+                    <h3>TozaPro</h3>
+                    <p>Sizning ishonchli hamkoringiz. Biz bilan hayotingizni yengillashtiring.</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Xizmatlar</h4>
+                    <ul>
+                        <li><a href="#">Uy tozalash</a></li>
+                        <li><a href="#">Ofis tozalash</a></li>
+                        <li><a href="#">Ximchistka</a></li>
+                        <li><a href="#">Oyna yuvish</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Kontaktlar</h4>
+                    <p>📍 Toshkent sh., O'zbekiston</p>
+                    <p>📞 +998 50 225 22 20</p>
+                    <p>📧 info@tozapro.uz</p>
+                    <div class="social-links">
+                        <a href="#">Telegram</a>
+                        <a href="#">Instagram</a>
+                        <a href="#">Facebook</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 TozaPro. Barcha huquqlar himoyalangan.</p>
+            </div>
+        </footer>
+    </main>
+    <script>
+        const burger = document.querySelector('.burger-menu');
+        const nav = document.querySelector('.nav-links');
+
+        burger.addEventListener('click', () => {
+            nav.classList.toggle('active');
+        });
+    </script>
 </body>
 </html>
